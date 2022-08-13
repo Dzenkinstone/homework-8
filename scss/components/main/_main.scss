@@ -1,0 +1,54 @@
+.main {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  background-color: var(--black-bg-cl);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/header-bi/img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 0;
+  background-position: center;
+}
+
+.main__title {
+  width: 696px;
+  margin: 0 auto;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--btn-txt-cl);
+  text-transform: uppercase;
+}
+
+.main__btn {
+  padding: 10px 32px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background-color: var(--accent-txt-cl);
+  color: var(--white-bg-cl);
+  transition: color var(--anim-fast) var(--transition-timing-function),
+    background-color var(--anim-fast) var(--transition-timing-function);
+
+  &--margin {
+    margin-top: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--btn-txt-cl);
+    background-color: var(--blue-bg-cl);
+  }
+}

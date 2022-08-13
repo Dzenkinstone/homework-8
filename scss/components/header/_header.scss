@@ -1,0 +1,66 @@
+.header {
+  border-bottom: var(--border);
+}
+
+.header-container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-right: 93px;
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-list__phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--grey-txt-cl);
+  display: flex;
+  align-items: center;
+  transition: color var(--anim-fast) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-cl);
+  }
+}
+
+.header-list__email {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--grey-txt-cl);
+  display: flex;
+  align-items: center;
+  transition: color var(--anim-fast) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-cl);
+  }
+}
+
+.header-list__icon {
+  fill: currentColor;
+
+  &--margin {
+    margin-right: 10px;
+  }
+}

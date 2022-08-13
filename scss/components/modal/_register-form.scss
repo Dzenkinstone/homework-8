@@ -1,0 +1,143 @@
+.register-form {
+  text-align: center;
+}
+
+.register-form__title {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.register-form__group {
+  margin-bottom: 20px;
+}
+
+.register-form__wrap {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.register-form__label {
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--grey-txt-cl);
+}
+
+.register-form__input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: outline var(--anim-fast) var(--transition-timing-function);
+  padding: 10px;
+  padding-left: 40px;
+  outline: none;
+  border-radius: 4px;
+
+  &:focus {
+    border: none;
+    outline: 1px solid var(--accent-txt-cl);
+  }
+
+  &:focus + .register-form__icon {
+    fill: #2196f3;
+  }
+}
+
+.register-form__message {
+  transition: outline var(--anim-fast) var(--transition-timing-function);
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 10px;
+  padding-left: 16px;
+  outline: transparent;
+  border-radius: 4px;
+  resize: none;
+  height: 120px;
+
+  &:focus {
+    border: none;
+    outline: 1px solid var(--accent-txt-cl);
+  }
+}
+
+.register-form__icon {
+  transition: fill var(--anim-fast) var(--transition-timing-function);
+  position: absolute;
+  bottom: 15px;
+  left: 14px;
+}
+
+.register-form__agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  &--text {
+    margin-left: 8.38px;
+    color: var(--grey-txt-cl);
+    font-size: 14px;
+    line-height: 1.8;
+    user-select: none;
+    text-underline-position: under;
+  }
+
+  &--link {
+    color: var(--accent-txt-cl);
+  }
+}
+
+.register-form__icons--uncheck {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--grey-txt-cl);
+  border-color: #212121;
+  border-radius: 4px;
+
+  .register-checkbox:checked + .register-form__icons & {
+    opacity: 0;
+    transition: opacity var(--anim-fast) var(--transition-timing-function);
+  }
+}
+
+.register-form__icons--check {
+  opacity: 0;
+  fill: var(--accent-txt-cl);
+  transition: opacity var(--anim-fast) var(--transition-timing-function);
+
+  .register-checkbox:checked + .register-form__icons & {
+    opacity: 1;
+  }
+}
+
+.register-form__button {
+  display: inline-flex;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 55px;
+  color: var(--white-bg-cl);
+  background-color: var(--modal-btn-txt-cl);
+  transition: box-shadow var(--anim-fast) var(--transition-timing-function);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+}

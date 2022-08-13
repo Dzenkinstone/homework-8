@@ -1,0 +1,139 @@
+.footer {
+  display: flex;
+  padding: 60px 0;
+  background-color: var(--black-bg-cl);
+}
+
+.footer,
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.footer__group {
+  align-items: center;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.address {
+  font-style: normal;
+  display: flex;
+
+  &--margin {
+    margin-top: 20px;
+  }
+}
+
+.footer__logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    margin-right: 93px;
+  }
+}
+
+.studio {
+  color: var(--white-bg-cl);
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--white-bg-cl);
+  transition: color var(--anim-fast) var(--transition-timing-function);
+}
+
+.address__communication {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--anim-fast) var(--transition-timing-function);
+}
+
+.address__link:hover,
+.address__link:focus,
+.address__communication:hover,
+.address__communication:focus {
+  color: var(--accent-txt-cl);
+}
+
+.footer__social {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 70px;
+  }
+}
+
+.footer__slogan {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white-bg-cl);
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.icons-list {
+  display: flex;
+  gap: 10px;
+}
+
+.icons-list__link {
+  background-color: var(--footer-text-bg-cl);
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: var(--icons-txt-cl);
+  transition: background-color var(--anim-fast) var(--transition-timing-function);
+}
+
+.icons-list__link:hover,
+.icons-list__link:focus {
+  background-color: var(--accent-txt-cl);
+}
+
+.icons-list__icon {
+  fill: var(--white-bg-cl);
+}

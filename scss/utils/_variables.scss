@@ -1,0 +1,31 @@
+/* Block 1 */
+
+:root {
+  /* fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* text colors */
+  --main-txt-cl: #212121;
+  --accent-txt-cl: #2196f3;
+  --blue-bg-cl: #0d6ee6;
+  --btn-txt-cl: #ffffff;
+  --icons-txt-cl: #afb1b8;
+  --grey-txt-cl: #757575;
+
+  /* bg colors */
+  --grey-bg-cl: #f5f4fa;
+  --white-bg-cl: #ffffff;
+  --black-bg-cl: #2f303a;
+  --footer-text-bg-cl: rgba(255, 255, 255, 0.1);
+  --portfolio-overlay-color: rgba(33, 150, 243, 0.9);
+
+  /* others */
+  --modal-btn-txt-cl: #188ce8;
+  --border: 1px solid #eeeeee;
+  --border-radius: 4px;
+  --padding: 20px 24px;
+
+  --anim-fast: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
