@@ -1,5 +1,7 @@
 .main {
-  max-width: 1600px;
+  display: block;
+  max-width: 480px;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
   height: 600px;
@@ -8,20 +10,35 @@
     url(../images/header-bi/img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 200px 0;
+  padding: 118px 0;
   background-position: center;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    max-width: 1600px;
+    max-height: 600px;
+  }
 }
 
 .main__title {
-  width: 696px;
-  margin: 0 auto;
-  font-size: 44px;
+  max-width: 360px;
   font-weight: 900;
+  margin: 0 auto;
+  font-size: 26px;
   line-height: 1.36;
-  letter-spacing: 0.06em;
   text-align: center;
-  color: var(--btn-txt-cl);
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--btn-txt-cl);
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+  }
 }
 
 .main__btn {

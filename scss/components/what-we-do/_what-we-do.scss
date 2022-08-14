@@ -1,6 +1,10 @@
 .what-we-do {
-  @include section;
-  padding-top: 0;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+    padding-bottom: 94px;
+    display: flex;
+  }
 }
 
 .what-we-do__title {

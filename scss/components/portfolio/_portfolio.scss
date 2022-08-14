@@ -1,7 +1,17 @@
+.portfolio {
+  @include section;
+}
+
 .portfolio__navigation {
-  justify-content: center;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
 }
 
 .portfolio__btn {

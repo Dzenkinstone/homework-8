@@ -20,6 +20,8 @@
 
 @import './components/header/nav';
 
+@import './components/header/mobile-menu';
+
 // --main
 
 @import './components/main/main';
@@ -48,10 +50,12 @@
 
 @import './components/footer/subscribe-form';
 
+// --portfolio
+
+@import './components/portfolio/portfolio';
+
 // Modal
 
 @import './components/modal/backdrop';
 
 @import './components/modal/register-form';
-
-@import './components/portfolio/portfolio';

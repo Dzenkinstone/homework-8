@@ -84,12 +84,17 @@
   margin-bottom: 30px;
 
   &--text {
-    margin-left: 8.38px;
-    color: var(--grey-txt-cl);
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 12px;
     line-height: 1.8;
-    user-select: none;
-    text-underline-position: under;
+    letter-spacing: 0.03em;
+    color: var(--grey-txt-cl);
+    margin-left: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 8.38px;
+      color: var(--grey-txt-cl);
+    }
   }
 
   &--link {

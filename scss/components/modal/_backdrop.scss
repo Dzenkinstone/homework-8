@@ -25,13 +25,18 @@
 
 .modal {
   position: relative;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   z-index: 1000;
   background-color: var(--white-bg-cl);
   border-radius: 4px;
   transition: fill var(--anim-fast) var(--transition-timing-function);
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop__btn {
