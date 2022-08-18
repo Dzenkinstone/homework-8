@@ -68,19 +68,19 @@
       <div class="container">
         <h1 class="visually-hidden">Portfolio</h1>
         <ul class="list portfolio__navigation">
-          <li class="portfolio__item">
+          <li class="portfolio__pages">
             <button class="portfolio__btn portfolio__another-btn" type="button">Все</button>
           </li>
-          <li class="portfolio__item">
+          <li class="portfolio__pages">
             <button class="portfolio__btn" type="button">Веб-сайты</button>
           </li>
-          <li class="portfolio__item">
+          <li class="portfolio__pages">
             <button class="portfolio__btn" type="button">Приложения</button>
           </li>
-          <li class="portfolio__item">
+          <li class="portfolio__pages">
             <button class="portfolio__btn" type="button">Дизайн</button>
           </li>
-          <li class="portfolio__item">
+          <li class="portfolio__pages">
             <button class="portfolio__btn" type="button">Маркетинг</button>
           </li>
         </ul>
@@ -88,14 +88,48 @@
           <li class="portfolio__item">
             <a class="portfolio__link link" href="#">
               <div class="portfolio__thumb">
-                <img class="portfolio__img" src="./images/portfolio/1.jpg" alt="Веб-сайт Технокряк" width="370"
-                  height="294" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и
-                    сервисов. Все это
-                    позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
+                <!-- Picture -->
+
+                <picture>
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-1@1x_lg.webp 1x, ./images/portfolio/img-1@2x_lg.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-1@1x_lg.jpg 1x, ./images/portfolio/img-1@2x_lg.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Tablet -->
+
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-1@1x_md.webp 1x, ./images/portfolio/img-1@2x_md.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-1@1x_md.jpg 1x, ./images/portfolio/img-1@2x_md.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Mobile -->
+
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-1@1x_sm.webp 1x, ./images//portfolio/img-1@2x_sm.webp 2x"
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-1@1x_sm.jpg 1x, ./images//portfolio/img-1@2x_sm.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Fallback -->
+
+                    <img class="portfolio__img" src="./images/portfolio/img-1.jpg" alt="Веб-сайт Технокряк" />
+
+                  </picture>
+
+                  <!-- Picture -->
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и
+                      сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
               </div>
               <div class="portfolio__border">
                 <h2 class="portfolio__title">Технокряк</h2>
@@ -106,32 +140,100 @@
           <li class="portfolio__item">
             <a class="portfolio__link link" href="#">
               <div class="portfolio__thumb">
-                <img class="portfolio__img" src="./images/portfolio/2.jpg" alt="Веб-сайт Технокряк" width="370"
-                  height="294" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и
-                    сервисов. Все это
-                    позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
+                <!-- Picture -->
+
+                <picture>
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-2@1x_lg.webp 1x, ./images/portfolio/img-2@2x_lg.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-2@1x_lg.jpg 1x, ./images/portfolio/img-2@2x_lg.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Tablet -->
+
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-2@1x_md.webp 1x, ./images/portfolio/img-2@2x_md.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-2@1x_md.jpg 1x, ./images/portfolio/img-2@2x_md.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Mobile -->
+
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-2@1x_sm.webp 1x, ./images//portfolio/img-2@2x_sm.webp 2x"
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-2@1x_sm.jpg 1x, ./images//portfolio/img-2@2x_sm.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Fallback -->
+
+                    <img class="portfolio__img" src="./images/portfolio/img-2.jpg" alt="Веб-сайт Технокряк" />
+
+                  </picture>
+
+                  <!-- Picture -->
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и
+                      сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
               </div>
               <div class="portfolio__border">
                 <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
-                <p class="portfolio__description">Дизайн</p>
+                <p class="portfolio__description">Веб-сайт</p>
               </div>
             </a>
           </li>
           <li class="portfolio__item">
             <a class="portfolio__link link" href="#">
               <div class="portfolio__thumb">
-                <img class="portfolio__img" src="./images/portfolio/3.jpg" alt="Веб-сайт Технокряк" width="370"
-                  height="294" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и
-                    сервисов. Все это
-                    позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
+                <!-- Picture -->
+
+                <picture>
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-3@1x_lg.webp 1x, ./images/portfolio/img-3@2x_lg.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-3@1x_lg.jpg 1x, ./images/portfolio/img-3@2x_lg.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Tablet -->
+
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-3@1x_md.webp 1x, ./images/portfolio/img-3@2x_md.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-3@1x_md.jpg 1x, ./images/portfolio/img-3@2x_md.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Mobile -->
+
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-3@1x_sm.webp 1x, ./images//portfolio/img-3@2x_sm.webp 2x"
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-3@1x_sm.jpg 1x, ./images//portfolio/img-3@2x_sm.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Fallback -->
+
+                    <img class="portfolio__img" src="./images/portfolio/img-3.jpg" alt="Веб-сайт Технокряк" />
+
+                  </picture>
+
+                  <!-- Picture -->
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и
+                      сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
               </div>
               <div class="portfolio__border">
                 <h2 class="portfolio__title">Ресторан Seafood</h2>
@@ -142,14 +244,48 @@
           <li class="portfolio__item">
             <a class="portfolio__link link" href="#">
               <div class="portfolio__thumb">
-                <img class="portfolio__img" src="./images/portfolio/4.jpg" alt="Веб-сайт Технокряк" width="370"
-                  height="294" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и
-                    сервисов. Все это
-                    позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
+                <!-- Picture -->
+
+                <picture>
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-4@1x_lg.webp 1x, ./images/portfolio/img-4@2x_lg.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-4@1x_lg.jpg 1x, ./images/portfolio/img-4@2x_lg.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Tablet -->
+
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-4@1x_md.webp 1x, ./images/portfolio/img-4@2x_md.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-4@1x_md.jpg 1x, ./images/portfolio/img-4@2x_md.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Mobile -->
+
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-4@1x_sm.webp 1x, ./images//portfolio/img-4@2x_sm.webp 2x"
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-4@1x_sm.jpg 1x, ./images//portfolio/img-4@2x_sm.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Fallback -->
+
+                    <img class="portfolio__img" src="./images/portfolio/img-4.jpg" alt="Веб-сайт Технокряк" />
+
+                  </picture>
+
+                  <!-- Picture -->
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и
+                      сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
               </div>
               <div class="portfolio__border">
                 <h2 class="portfolio__title">Проект Prime</h2>
@@ -160,14 +296,48 @@
           <li class="portfolio__item">
             <a class="portfolio__link link" href="#">
               <div class="portfolio__thumb">
-                <img class="portfolio__img" src="./images/portfolio/5.jpg" alt="Веб-сайт Технокряк" width="370"
-                  height="294" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и
-                    сервисов. Все это
-                    позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
+                <!-- Picture -->
+
+                <picture>
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-5@1x_lg.webp 1x, ./images/portfolio/img-5@2x_lg.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-5@1x_lg.jpg 1x, ./images/portfolio/img-5@2x_lg.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Tablet -->
+
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-5@1x_md.webp 1x, ./images/portfolio/img-5@2x_md.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-5@1x_md.jpg 1x, ./images/portfolio/img-5@2x_md.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Mobile -->
+
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-5@1x_sm.webp 1x, ./images//portfolio/img-5@2x_sm.webp 2x"
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-5@1x_sm.jpg 1x, ./images//portfolio/img-5@2x_sm.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Fallback -->
+
+                    <img class="portfolio__img" src="./images/portfolio/img-5.jpg" alt="Веб-сайт Технокряк" />
+
+                  </picture>
+
+                  <!-- Picture -->
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и
+                      сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
               </div>
               <div class="portfolio__border">
                 <h2 class="portfolio__title">Проект Boxes</h2>
@@ -178,14 +348,48 @@
           <li class="portfolio__item">
             <a class="portfolio__link link" href="#">
               <div class="portfolio__thumb">
-                <img class="portfolio__img" src="./images/portfolio/6.jpg" alt="Веб-сайт Технокряк" width="370"
-                  height="294" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и
-                    сервисов. Все это
-                    позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
+                <!-- Picture -->
+
+                <picture>
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-6@1x_lg.webp 1x, ./images/portfolio/img-6@2x_lg.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-6@1x_lg.jpg 1x, ./images/portfolio/img-6@2x_lg.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Tablet -->
+
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-6@1x_md.webp 1x, ./images/portfolio/img-6@2x_md.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-6@1x_md.jpg 1x, ./images/portfolio/img-6@2x_md.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Mobile -->
+
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-6@1x_sm.webp 1x, ./images//portfolio/img-6@2x_sm.webp 2x"
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-6@1x_sm.jpg 1x, ./images//portfolio/img-6@2x_sm.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Fallback -->
+
+                    <img class="portfolio__img" src="./images/portfolio/img-6.jpg" alt="Веб-сайт Технокряк" />
+
+                  </picture>
+
+                  <!-- Picture -->
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и
+                      сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
               </div>
               <div class="portfolio__border">
                 <h2 class="portfolio__title">Inspiration has no Borders</h2>
@@ -196,8 +400,42 @@
           <li class="portfolio__item">
             <a class="portfolio__link link" href="#">
               <div class="portfolio__thumb">
-                <img class="portfolio__img" src="./images/portfolio/7.jpg" alt="Веб-сайт Технокряк" width="370"
-                  height="294" />
+
+                <!-- Picture -->
+
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img-7@1x_lg.webp 1x, ./images/portfolio/img-7@2x_lg.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img-7@1x_lg.jpg 1x, ./images/portfolio/img-7@2x_lg.jpg 2x"
+                    type="image/jpg">
+
+                  <!-- Tablet -->
+
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/img-7@1x_md.webp 1x, ./images/portfolio/img-7@2x_md.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/img-7@1x_md.jpg 1x, ./images/portfolio/img-7@2x_md.jpg 2x"
+                    type="image/jpg">
+
+                  <!-- Mobile -->
+
+                  <source media="(max-width: 767px)"
+                    srcset="./images//portfolio/img-7@1x_sm.webp 1x, ./images//portfolio/img-7@2x_sm.webp 2x"
+                    type="image/webp">
+                  <source media="(max-width: 767px)"
+                    srcset="./images//portfolio/img-7@1x_sm.jpg 1x, ./images//portfolio/img-7@2x_sm.jpg 2x"
+                    type="image/jpg">
+
+                  <!-- Fallback -->
+
+                  <img class="portfolio__img" src="./images/portfolio/img-7.jpg" alt="Веб-сайт Технокряк" />
+
+                </picture>
+
+                <!-- Picture -->
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и
@@ -214,14 +452,48 @@
           <li class="portfolio__item">
             <a class="portfolio__link link" href="#">
               <div class="portfolio__thumb">
-                <img class="portfolio__img" src="./images/portfolio/8.jpg" alt="Веб-сайт Технокряк" width="370"
-                  height="294" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и
-                    сервисов. Все это
-                    позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
+                <!-- Picture -->
+
+                <picture>
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-8@1x_lg.webp 1x, ./images/portfolio/img-8@2x_lg.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-8@1x_lg.jpg 1x, ./images/portfolio/img-8@2x_lg.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Tablet -->
+
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-8@1x_md.webp 1x, ./images/portfolio/img-8@2x_md.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-8@1x_md.jpg 1x, ./images/portfolio/img-8@2x_md.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Mobile -->
+
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-8@1x_sm.webp 1x, ./images//portfolio/img-8@2x_sm.webp 2x"
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-8@1x_sm.jpg 1x, ./images//portfolio/img-8@2x_sm.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Fallback -->
+
+                    <img class="portfolio__img" src="./images/portfolio/img-8.jpg" alt="Веб-сайт Технокряк" />
+
+                  </picture>
+
+                  <!-- Picture -->
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и
+                      сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
               </div>
               <div class="portfolio__border">
                 <h2 class="portfolio__title">Проект LAB</h2>
@@ -232,14 +504,48 @@
           <li class="portfolio__item">
             <a class="portfolio__link link" href="#">
               <div class="portfolio__thumb">
-                <img class="portfolio__img" src="./images/portfolio/9.jpg" alt="Веб-сайт Технокряк" width="370"
-                  height="294" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и
-                    сервисов. Все это
-                    позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
+                <!-- Picture -->
+
+                <picture>
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-9@1x_lg.webp 1x, ./images/portfolio/img-9@2x_lg.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img-9@1x_lg.jpg 1x, ./images/portfolio/img-9@2x_lg.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Tablet -->
+
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-9@1x_md.webp 1x, ./images/portfolio/img-9@2x_md.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/img-9@1x_md.jpg 1x, ./images/portfolio/img-9@2x_md.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Mobile -->
+
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-9@1x_sm.webp 1x, ./images//portfolio/img-9@2x_sm.webp 2x"
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./images//portfolio/img-9@1x_sm.jpg 1x, ./images//portfolio/img-9@2x_sm.jpg 2x"
+                      type="image/jpg">
+
+                    <!-- Fallback -->
+
+                    <img class="portfolio__img" src="./images/portfolio/img-9.jpg" alt="Веб-сайт Технокряк" />
+
+                  </picture>
+
+                  <!-- Picture -->
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и
+                      сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
               </div>
               <div class="portfolio__border">
                 <h2 class="portfolio__title">Growing Business</h2>
