@@ -1,12 +1,11 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 90px;
+  @include section;
 }
 
 .clients-list__title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.1px;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -20,6 +19,7 @@
 }
 
 .clients-list {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;

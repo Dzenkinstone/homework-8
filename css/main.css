@@ -850,14 +850,20 @@ address {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 90px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-list__title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.1px;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -872,6 +878,9 @@ address {
 }
 
 .clients-list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1183,12 +1192,17 @@ address {
       -ms-flex-align: center;
           align-items: center;
   min-height: 50px;
-  min-width: 450px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: transparent;
   background-color: var(--black-bg-cl);
   padding-left: 16px;
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .subscribe-form__input {
+    min-width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .subscribe-form__input {
@@ -1204,8 +1218,6 @@ address {
 .subscribe-form__button {
   margin-top: 30px;
   cursor: pointer;
-  margin-left: 10px;
-  width: 200px;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1222,8 +1234,16 @@ address {
   border: none;
   border-radius: 4px;
 }
+@media screen and (min-width: 768px) {
+  .subscribe-form__button {
+    width: 200px;
+    margin-left: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe-form__button {
+    width: 200px;
+    margin-left: 10px;
     margin-top: 0px;
   }
 }
@@ -1250,6 +1270,7 @@ address {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 8px;
+  row-gap: 15px;
 }
 @media screen and (min-width: 768px) {
   .portfolio__navigation {
@@ -1260,6 +1281,7 @@ address {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 8px;
+    row-gap: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1271,6 +1293,7 @@ address {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 8px;
+    row-gap: 0px;
   }
 }
 

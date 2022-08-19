@@ -6,17 +6,20 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  row-gap: 15px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     gap: 8px;
+    row-gap: 0px;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     gap: 8px;
+    row-gap: 0px;
   }
 }
 
