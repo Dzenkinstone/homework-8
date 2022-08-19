@@ -477,6 +477,21 @@ address {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("../images/header-bi/img@1x_sm.webp") 1x);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/header-bi/img@1x_sm.webp") 1x);
 }
+@media screen and (min-width: 480px) {
+  .main {
+    max-width: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main {
+    max-width: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main {
+    max-width: 1600px;
+  }
+}
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .main {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header-bi/img@2x_sm.jpg");
@@ -1449,8 +1464,23 @@ address {
 .portfolio__overlay-text {
   color: var(--white-bg-cl);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
+}
+@media screen and (min-width: 480px) {
+  .portfolio__overlay-text {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__overlay-text {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__overlay-text {
+    font-size: 18px;
+  }
 }
 
 .backdrop {

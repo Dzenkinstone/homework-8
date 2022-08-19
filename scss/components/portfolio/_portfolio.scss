@@ -145,6 +145,18 @@
 .portfolio__overlay-text {
   color: var(--white-bg-cl);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
+
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
 }
